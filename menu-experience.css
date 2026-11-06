@@ -1,0 +1,33 @@
+/* Phase 2 — The Velvet Table editorial menu */
+.menu-section{overflow:hidden}
+.menu-tabs{scrollbar-width:thin;scrollbar-color:#c6a983 transparent}
+.tab{transition:color .22s ease,background .22s ease,border-color .22s ease}
+.tab:hover{background:rgba(84,36,55,.045);color:var(--wine)}
+.tab:focus-visible{outline:2px solid var(--wine);outline-offset:-3px}
+.menu-editorial{display:grid;grid-template-columns:1.04fr .96fr;min-height:365px;background:#241a18;margin:4px 0 46px;color:#f5efe6;overflow:hidden}
+.menu-editorial-image{min-height:365px;background-image:linear-gradient(0deg,rgba(24,15,15,.55),rgba(24,15,15,.05) 58%),url('assets/menu/starters.jpg');background-size:100% 100%,contain;background-position:center center;background-repeat:no-repeat;background-color:#211815;position:relative}
+.menu-image-stamp{position:absolute;bottom:23px;left:28px;color:#f4e4cd;font-size:9px;letter-spacing:.18em;text-shadow:0 2px 8px #000}.menu-image-stamp span{color:var(--gold);padding:0 7px}
+.menu-editorial-copy{padding:55px clamp(28px,5vw,76px);display:flex;flex-direction:column;justify-content:center}
+.menu-editorial-kicker{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.22em;margin:0 0 20px}
+.menu-editorial-copy h3{font-size:clamp(46px,4.8vw,75px);line-height:1.06;margin:0 0 21px}
+.menu-editorial-copy h3 em{color:var(--gold);font-weight:400}
+.menu-editorial-copy>p:not(.menu-editorial-kicker){line-height:1.9;font-size:13px;color:#d1c3b9;max-width:440px;margin:0}
+.menu-editorial-footer{display:flex;justify-content:space-between;gap:15px;margin-top:45px;padding-top:18px;border-top:1px solid #604a43;color:#cbb6a5;font-size:9px;letter-spacing:.12em}
+.menu-list-heading{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #cfc0b2;padding-bottom:15px;margin-bottom:12px;color:#745b50;font-size:10px;font-weight:700;letter-spacing:.18em}
+.menu-item{transition:padding-left .2s ease,border-color .2s ease}.menu-item:hover{padding-left:8px;border-color:#ac8d78}
+.menu-enter{animation:velvetMenuIn .4s ease both}.image-enter{animation:velvetImageIn .45s ease both}
+@keyframes velvetMenuIn{from{opacity:.35;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@keyframes velvetImageIn{from{opacity:.7;filter:saturate(.65)}to{opacity:1;filter:saturate(1)}}
+@media(max-width:760px){.menu-editorial{grid-template-columns:1fr}.menu-editorial-image{min-height:270px}.menu-editorial-copy{padding:40px 28px}.menu-editorial-copy h3{font-size:55px}.menu-editorial-footer{margin-top:28px}.menu-image-stamp{left:22px}}
+@media(max-width:440px){.menu-editorial-image{min-height:220px}.menu-editorial-copy h3{font-size:46px}.menu-editorial-footer{font-size:8px}.menu-list-heading{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.menu-enter,.image-enter{animation:none}.tab,.menu-item{transition:none}}
+
+/* Photography refinement: display the complete wide source photos without zooming or stretching. */
+.menu-editorial-image{background-size:100% 100%,contain;background-repeat:no-repeat;background-position:center center;background-color:#211815}
+
+/* Refined food photography: full-bleed editorial panels, without letterboxing.
+   Images are pre-composited with a subtle blurred photographic extension. */
+.menu-editorial-image{background-size:100% 100%,cover;background-position:center;background-repeat:no-repeat;background-color:#211815}
+
+/* Final food photography: consistent full-bleed photographs with natural proportions. */
+.menu-editorial-image{background-size:100% 100%,cover;background-position:center center;background-repeat:no-repeat}

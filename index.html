@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211815">
+  <meta name="description" content="The Velvet Table — a fictional fine-dining restaurant website design concept.">
+  <title>The Velvet Table | An Evening Worth Savoring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="menu-experience.css">
+  <script src="script.js" defer></script>
+  <script src="menu-experience.js" defer></script>
+</head>
+<body>
+  <div class="topline">AN EVENING WORTH SAVORING <span aria-hidden="true">✦</span> A FINE-DINING DESIGN CONCEPT</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="The Velvet Table home"><span class="brand-mark">VT</span><span>THE VELVET TABLE</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav" aria-label="Main navigation"><a href="#story">Our Story</a><a href="#menu">The Menu</a><a href="#experience">Experience</a><a class="nav-reserve" href="#reservations">Reserve a Table <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-photo" role="img" aria-label="Candlelit fine-dining table with warm ambient lighting"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content"><p class="eyebrow">WASHINGTON, D.C. · EST. IN IMAGINATION</p><h1 id="hero-heading">An evening<br><em>worth savoring.</em></h1><p class="hero-copy">Where the atmosphere lingers, the conversation flows, and every detail becomes part of the story.</p><div class="hero-actions"><a class="button button-gold" href="#menu">Explore the Menu <span aria-hidden="true">↗</span></a><a class="hero-link" href="#reservations">Plan Your Evening <span aria-hidden="true">→</span></a></div></div>
+      <div class="hero-side">01 / A DIFFERENT KIND OF DINNER</div>
+      <div class="hero-bottom"><span>THE ART OF GATHERING</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+    <section class="intro section-pad" id="story"><div class="intro-index">01 / THE PHILOSOPHY</div><div class="intro-body"><p class="eyebrow gold-text">THE TABLE IS JUST THE BEGINNING</p><h2>Good food brings us together.<br><em>Great evenings stay with us.</em></h2><p>At The Velvet Table, we believe dining is more than a meal. It's the anticipation before the first course, the glow of candlelight, and the stories shared long after the plates are cleared.</p><a class="under-link" href="#experience">Discover the experience <span aria-hidden="true">↗</span></a></div><div class="intro-symbol" aria-hidden="true">V<span>✧</span>T</div></section>
+    <section class="feature" id="experience"><div class="feature-image" role="img" aria-label="Elegantly plated fine-dining dish"></div><div class="feature-copy"><p class="eyebrow gold-text">02 / THE EXPERIENCE</p><h2>Crafted with care.<br><em>Served with soul.</em></h2><p>Seasonal inspiration, thoughtful presentation, and a little unexpected magic. Every course is an invitation to slow down and enjoy the moment.</p><div class="feature-rule"></div><div class="feature-small">AN INTIMATE SETTING <span>•</span> A THOUGHTFUL MENU <span>•</span> A NIGHT TO REMEMBER</div></div></section>
+    <section class="menu-section section-pad" id="menu"><div class="section-top"><div><p class="eyebrow gold-text">03 / A TASTE OF THE VELVET TABLE</p><h2>The evening's <em>offerings.</em></h2></div><p>A curated selection of imagined dishes, inspired by the pleasure of dining beautifully.</p></div><div class="menu-tabs" role="tablist" aria-label="Menu categories"><button class="tab active" type="button" role="tab" aria-selected="true" data-category="starters">To Begin</button><button class="tab" type="button" role="tab" aria-selected="false" data-category="mains">The Main Event</button><button class="tab" type="button" role="tab" aria-selected="false" data-category="desserts">A Sweet Ending</button><button class="tab" type="button" role="tab" aria-selected="false" data-category="drinks">The Pour</button></div><div class="menu-editorial" aria-label="Selected course introduction">
+  <div class="menu-editorial-image" id="menu-editorial-image" role="img" aria-label="Beautifully plated fine-dining dish"></div>
+  <div class="menu-editorial-copy"><p class="menu-editorial-kicker" id="menu-editorial-kicker">THE FIRST IMPRESSION · COURSE 01</p><h3 id="menu-editorial-heading">A beautiful <em>beginning.</em></h3><p id="menu-editorial-description">Every memorable evening starts with a little anticipation. Begin with plates designed to be shared, savored, and remembered.</p><div class="menu-editorial-footer"><span id="menu-editorial-count">04 CURATED SELECTIONS</span><span>SCROLL TO EXPLORE ↓</span></div></div>
+</div>
+<div class="menu-list-heading"><span>THE SELECTION</span><span id="menu-course-label">TO BEGIN / 01</span></div>
+<div class="menu-items" id="menu-items" role="tabpanel" aria-label="To Begin menu" aria-live="polite"></div><p class="menu-note">Fictional menu and prices for portfolio demonstration purposes.</p></section>
+    <section class="quote"><p class="eyebrow">A NOTE FROM OUR TABLE</p><blockquote>“The best nights are never rushed.”</blockquote><span class="quote-flourish" aria-hidden="true">✧</span></section>
+    <section class="reservation section-pad" id="reservations"><div class="reservation-intro"><p class="eyebrow gold-text">04 / YOUR SEAT AWAITS</p><h2>Make a night <em>of it.</em></h2><p>Pick your preferred date, time, and party size to preview a reservation. This is an interactive design demonstration—no real booking will be made.</p><div class="reservation-decoration" aria-hidden="true">✦</div></div><form id="reservation-form" class="reservation-form"><h3>Your evening, your way.</h3><label for="date">Date</label><input id="date" name="date" type="date" required><div class="form-grid"><div><label for="time">Time</label><select id="time" name="time" required><option value="">Select a time</option><option>5:30 PM</option><option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option></select></div><div><label for="guests">Guests</label><select id="guests" name="guests" required><option value="">Party size</option><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option></select></div></div><button class="button button-gold reserve-submit" type="submit">Preview My Reservation <span aria-hidden="true">↗</span></button><p class="form-disclaimer">DESIGN DEMO ONLY · NO RESERVATIONS ARE PROCESSED</p><div id="reservation-result" class="reservation-result" role="status" hidden></div></form></section>
+  </main>
+  <footer><div class="footer-top"><div><span class="footer-monogram">VT</span><h2>THE VELVET TABLE</h2><p>An evening worth savoring.</p></div><div class="footer-links"><a href="#home">Back to Top ↑</a><a href="#menu">The Menu</a><a href="#reservations">Reservations</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> THE VELVET TABLE</span><span>FICTIONAL BRAND · ORIGINAL PORTFOLIO CONCEPT</span></div></footer>
+</body>
+</html>
